@@ -2,60 +2,35 @@
 
 ## Purpose
 
-Investigate a small industrial pipe-support structure through the engineering design loop: define the problem, research, compare alternatives, select and model a preliminary design, verify its performance, and improve it.
+Develop a conceptual industrial pipe-support structure and investigate how its structural arrangement affects vertical load capacity, lateral deformation, and material efficiency.
 
-## Selected direction
+## Design scope
 
-- Baseline: two columns supporting a horizontal beam.
-- Investigate combined vertical and lateral performance.
-- Compare the baseline with diagonal bracing.
-- Define geometry, loads, and performance requirements before calculations.
+The baseline consists of two columns supporting a horizontal beam. The study addresses combined vertical and lateral performance and compares the baseline with diagonal bracing.
 
-## Requirements still to be established
+A frame with inclined struts connecting near the beam midpoint is an additional candidate for comparison. It represents a different load path from corner-to-corner X-bracing.
 
-| Item | Information needed |
-| --- | --- |
-| Supported pipe | Diameter, wall thickness, material, and contents |
-| Supported length | Pipe length whose weight is carried by this frame, justified by the support arrangement |
-| Load transfer | Pipe position, attachment, and how forces enter the beam |
-| Geometry | Span, height, clearance, and access needs |
-| Gravity loading | Pipe, contents, hardware, insulation if applicable, and frame self-weight |
-| Lateral loading | Physical scenario, force magnitude, direction, and application point |
-| Connections and bases | Modeling assumptions and limitations |
-| Strength | Material grade and the selected design/checking approach |
-| Serviceability | Justified vertical deflection and lateral displacement limits |
-| Stability | Compression-member and out-of-plane checks appropriate to scope |
-| Objective | Whether to prioritize structural mass, cost, or another measure |
+## Functional requirements
 
-## Alternatives
+- Carry the loads transferred by the supported pipe and its contents.
+- Resist the specified horizontal loading.
+- Maintain the clearance and access required by the application.
+- Satisfy strength, deformation, and stability criteria appropriate to the adopted model.
 
-| Arrangement | Question to investigate |
-| --- | --- |
-| Unbraced two-column frame | Can a defined moment-resisting system meet the requirements efficiently? |
-| Diagonally braced frame | How much does bracing change lateral performance, material use, and access? |
-| Frame with inclined struts to the beam | Does intermediate vertical support improve the design enough to justify added members and connections? |
+Quantitative requirements belong in this brief when adopted, with their basis identified. Preliminary suggestions and pending work are tracked in [tasks.md](tasks.md).
 
-The third alternative remains optional. Do not assume that X-bracing supplies an intermediate vertical beam support.
+## Design comparison
 
-## Proposed starting assumptions — not approved requirements
+Compare alternatives under consistent geometry, loading, material properties, and performance criteria. Evaluate structural mass and construction complexity separately; material savings alone do not establish a lower installed cost.
 
-| Parameter | Preliminary suggestion | Status |
-| --- | --- | --- |
-| Beam span | 2.0 m | Unconfirmed |
-| Frame height | 2.0 m | Unconfirmed |
-| Material | Carbon structural steel | Grade unselected |
-| Vertical pipe load | 2,000 N | Illustrative; derive from the pipe scenario |
-| Horizontal load | 400 N | Illustrative; justify a physical scenario |
-| Baseline joints and bases | Rigid joints and fixed bases | Modeling proposal; not a connection design |
-| Initial model | Static, in-plane | Scope proposal |
-| Pipe position | Beam midpoint | Unconfirmed |
+## Analysis and verification principles
 
-These values came from preliminary AI-assisted discussion. They must not be presented as derived loads, approved requirements, or verified design inputs.
+Use explicit load paths, support conditions, connection assumptions, and units. Verify computational results using equilibrium and appropriate hand-calculation reference cases. Examine sensitivity to assumptions that materially affect the conclusions.
 
-## Verification plan
+## Deliverables
 
-Before accepting computational results, check units and equilibrium, compare appropriate simplified cases against hand calculations, and examine sensitivity to connection assumptions and member properties. Record what was checked and any discrepancies.
+Design documentation, spreadsheet or MATLAB calculations, drawings, comparison figures, and a six-minute presentation.
 
-## Immediate next step
+## Scope boundaries
 
-Decide whether the loading will come from a physically specified industrial pipe scenario or a deliberately hypothetical structural example. Then establish the pipe specifications and supported load.
+This is a conceptual educational design study. Detailed connection and foundation design, thermal behavior, dynamic response, and nuclear seismic qualification are outside the initial scope. An in-plane model does not establish out-of-plane stability.

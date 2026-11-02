@@ -1,25 +1,19 @@
-# Decision and Assumption Log
+# Decision Log
 
-This log separates Thomas's selected direction from suggestions still awaiting a decision. Entries summarize the project discussion reviewed on November 2, 2026.
+This log records decisions and their reasoning. Pending decisions, preliminary suggestions, and completion tracking belong in [tasks.md](tasks.md).
 
-| ID | Topic | Status | Record |
+## Decisions recorded November 2, 2026
+
+These entries summarize Thomas's choices in the earlier project discussion; November 2 is the recording date.
+
+| ID | Topic | Decision | Basis |
 | --- | --- | --- | --- |
-| D01 | Learning approach | Selected | Thomas makes the engineering decisions and works through the calculations; assistance provides guidance and review. |
-| D02 | Baseline configuration | Selected | Option B: two-column frame supporting a horizontal beam. |
-| D03 | Diagonal supports | Selected for investigation | Examine Option C and the implications of diagonal members. No final brace layout or section has been selected. |
-| D04 | Performance focus | Selected | Combined vertical and lateral performance. |
-| D05 | Sequence | Selected | Define geometry, loads, and requirements before calculations. |
-| P01 | Physical application | Open | Physically specified industrial pipe support versus hypothetical frame loading. |
-| P02 | Baseline restraint | Proposed | Idealized rigid beam-to-column joints and fixed column bases. |
-| P03 | Optimization objective | Proposed | Minimize structural mass while meeting performance requirements; installed cost is a separate measure. |
-| P04 | Inclined struts | Optional investigation | Struts connecting near the beam midpoint, distinct from corner-to-corner X-bracing. |
-| P05 | Numerical inputs | Unconfirmed | See the preliminary suggestions in the design brief. |
-| P06 | Computational tool | Open | Spreadsheet or MATLAB; neither implementation has been developed. |
+| D01 | Learning approach | Thomas makes the engineering decisions and works through the calculations; assistance provides guidance and review. | Thomas explicitly requested guidance rather than having the project completed for him. |
+| D02 | Baseline configuration | Use Option B: two columns supporting a horizontal beam. | Thomas selected Option B. |
+| D03 | Diagonal supports | Include diagonal bracing as a design alternative for investigation. | Thomas requested examination of Option C and the effects of diagonal supports. |
+| D04 | Performance focus | Address combined vertical and lateral performance. | Thomas explicitly selected this focus. |
+| D05 | Design sequence | Define geometry, loads, and performance requirements before calculations. | Thomas explicitly requested this sequence. |
 
-## Updating this log
+## Recording subsequent decisions
 
-When a decision is made, record the date, selected option, reasoning, and any supporting calculation or source. Keep superseded assumptions identifiable so that results can be traced to the inputs used.
-
-## Current evidence
-
-No calculated performance comparisons, member sizing results, or verification results have yet been added.
+Add the decision date, choice, reasoning, and supporting calculation or source where applicable. If a decision is revised, add a superseding entry referencing the earlier ID so its historical basis remains traceable.
